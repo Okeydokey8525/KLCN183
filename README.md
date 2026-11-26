@@ -42,7 +42,9 @@
 | [07_ung_dung_web/](07_ung_dung_web/README.md) | Mã nguồn website PolypVision: Spring Boot (`polypweb/`), dịch vụ AI FastAPI (`polypweb/ai-service/`), mô tả và script khởi tạo CSDL (`co_so_du_lieu/`) |
 | `08_du_lieu_thuc_te/` | Đánh giá trên CVC-ClinicDB, CVC-ColonDB, ETIS-Larib, PolypGen và 800 ảnh manh tràng |
 
-Thư mục chỉ chứa các mô hình và kết quả có trong bản Word cuối.
+| [09_huong_phat_trien/](09_huong_phat_trien/README.md) | **Chỉ có trên nhánh `huong-phat-trien`.** Gồm 4 hướng làm sau khi nộp: (1) Polyp-PVT, VM-UNet; (2) BG20 chia 3 tập; (3) gộp dữ liệu; (4) SS2D quét bằng kernel CUDA, giảm 47% thời gian huấn luyện, mAP không khác biệt có ý nghĩa |
+
+Các thư mục `00`–`08` chỉ chứa các mô hình và kết quả có trong bản Word cuối. Thư mục `09` là phần làm thêm, không nằm trong báo cáo đã nộp.
 
 Repo GitHub không chứa checkpoint (`best.pt`, `*_best_*.pth` của 160 lượt huấn luyện, khoảng 7,9 GB) vì vượt giới hạn dung lượng của GitHub. Bản đầy đủ có checkpoint nằm trong bản nộp gửi GVHD.
 

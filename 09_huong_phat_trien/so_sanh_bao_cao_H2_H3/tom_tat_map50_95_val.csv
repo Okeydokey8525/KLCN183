@@ -1,0 +1,7 @@
+﻿thiet_ke,model,n_seed,val_map50_95_epoch_tot_TB,SD,val_map50_95_epoch100_TB,epoch_dat_95pct_dinh_TB,delta_tsvm_yolo,p_t,tsvm_cao_hon
+"Báo cáo khóa luận (train/val, val 160 ảnh, 20 seed)",YOLO26s-seg,20,0.7174,0.0129,0.7093,48.2,,,
+"Báo cáo khóa luận (train/val, val 160 ảnh, 20 seed)",YOLO26s-seg + TSVM,20,0.722,0.0074,0.7119,49.25,0.0047,0.0669,14/20
+"Hướng 2 (BG20 chia 3 tập, val 160 ảnh, 10 seed)",YOLO26s-seg,10,0.7977,0.0118,0.7912,43.0,,,
+"Hướng 2 (BG20 chia 3 tập, val 160 ảnh, 10 seed)",YOLO26s-seg + TSVM,10,0.7959,0.0063,0.7867,46.5,-0.0017,0.691,6/10
+"Hướng 3 (dữ liệu gộp chia 3 tập, val 532 ảnh, 10 seed)",YOLO26s-seg,10,0.6888,0.0058,0.6839,42.9,,,
+"Hướng 3 (dữ liệu gộp chia 3 tập, val 532 ảnh, 10 seed)",YOLO26s-seg + TSVM,10,0.6902,0.0048,0.6872,43.2,0.0014,0.5692,6/10

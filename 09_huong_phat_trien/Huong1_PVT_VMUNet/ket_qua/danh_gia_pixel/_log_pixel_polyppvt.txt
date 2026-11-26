@@ -1,0 +1,57 @@
+﻿GPU: NVIDIA GeForce RTX 5050 Laptop GPU | torch 2.13.0+cu130 | timm 1.0.31
+Validation: 160 ảnh (120 polyp, 40 nền)
+  polyppvt640 seed 0:   7.9s
+  polyppvt640 seed 1:   7.9s
+  polyppvt640 seed 2:   7.9s
+  polyppvt640 seed 3:   8.1s
+  polyppvt640 seed 4:   8.1s
+Tổng thời gian suy luận: 0.7 phút
+                   model                  label           metric  n_seeds   mean     sd    min    max  paired_t_p  wilcoxon_p  pvt_higher
+             polyppvt640          Polyp-PVT 640             dice        5 0.8937 0.0052 0.8848 0.8982         NaN         NaN         NaN
+             polyppvt640          Polyp-PVT 640              iou        5 0.8308 0.0045 0.8235 0.8352         NaN         NaN         NaN
+             polyppvt640          Polyp-PVT 640        precision        5 0.9089 0.0142 0.8896 0.9223         NaN         NaN         NaN
+             polyppvt640          Polyp-PVT 640           recall        5 0.9125 0.0128 0.9037 0.9351         NaN         NaN         NaN
+             polyppvt640          Polyp-PVT 640 bg_fp_image_rate        5 0.0300 0.0411 0.0000 0.1000         NaN         NaN         NaN
+             polyppvt640          Polyp-PVT 640         raw_dice        5 0.8943 0.0051 0.8855 0.8987         NaN         NaN         NaN
+                baseline            YOLO26s-seg             dice        5 0.8543 0.0222 0.8232 0.8736         NaN         NaN         NaN
+                baseline            YOLO26s-seg              iou        5 0.7979 0.0232 0.7633 0.8172         NaN         NaN         NaN
+                baseline            YOLO26s-seg        precision        5 0.8671 0.0192 0.8471 0.8907         NaN         NaN         NaN
+                baseline            YOLO26s-seg           recall        5 0.8728 0.0233 0.8416 0.8966         NaN         NaN         NaN
+                baseline            YOLO26s-seg bg_fp_image_rate        5 0.0050 0.0112 0.0000 0.0250         NaN         NaN         NaN
+                baseline            YOLO26s-seg         raw_dice        5 0.8540 0.0221 0.8230 0.8733         NaN         NaN         NaN
+                    tsvm     YOLO26s-seg + TSVM             dice        5 0.8538 0.0108 0.8366 0.8659         NaN         NaN         NaN
+                    tsvm     YOLO26s-seg + TSVM              iou        5 0.7998 0.0113 0.7840 0.8152         NaN         NaN         NaN
+                    tsvm     YOLO26s-seg + TSVM        precision        5 0.8575 0.0099 0.8410 0.8663         NaN         NaN         NaN
+                    tsvm     YOLO26s-seg + TSVM           recall        5 0.8772 0.0137 0.8549 0.8884         NaN         NaN         NaN
+                    tsvm     YOLO26s-seg + TSVM bg_fp_image_rate        5 0.0200 0.0209 0.0000 0.0500         NaN         NaN         NaN
+                    tsvm     YOLO26s-seg + TSVM         raw_dice        5 0.8535 0.0108 0.8362 0.8656         NaN         NaN         NaN
+               pranet640 PraNet (ResNet-50) 640             dice        5 0.8846 0.0054 0.8786 0.8930         NaN         NaN         NaN
+               pranet640 PraNet (ResNet-50) 640              iou        5 0.8206 0.0068 0.8133 0.8301         NaN         NaN         NaN
+               pranet640 PraNet (ResNet-50) 640        precision        5 0.8987 0.0078 0.8893 0.9096         NaN         NaN         NaN
+               pranet640 PraNet (ResNet-50) 640           recall        5 0.9112 0.0073 0.8994 0.9196         NaN         NaN         NaN
+               pranet640 PraNet (ResNet-50) 640 bg_fp_image_rate        5 0.0250 0.0000 0.0250 0.0250         NaN         NaN         NaN
+               pranet640 PraNet (ResNet-50) 640         raw_dice        5 0.8848 0.0055 0.8786 0.8933         NaN         NaN         NaN
+                 unet640              U-Net 640             dice        5 0.6972 0.0252 0.6683 0.7287         NaN         NaN         NaN
+                 unet640              U-Net 640              iou        5 0.5776 0.0288 0.5477 0.6134         NaN         NaN         NaN
+                 unet640              U-Net 640        precision        5 0.7787 0.0265 0.7514 0.8139         NaN         NaN         NaN
+                 unet640              U-Net 640           recall        5 0.7275 0.0233 0.6978 0.7523         NaN         NaN         NaN
+                 unet640              U-Net 640 bg_fp_image_rate        5 0.6250 0.0354 0.5750 0.6500         NaN         NaN         NaN
+                 unet640              U-Net 640         raw_dice        5 0.6974 0.0253 0.6684 0.7290         NaN         NaN         NaN
+     polyppvt640_vs_tsvm                    NaN             dice        5 0.0399 0.0140    NaN    NaN      0.0031      0.0625      5.0000
+     polyppvt640_vs_tsvm                    NaN              iou        5 0.0309 0.0139    NaN    NaN      0.0076      0.0625      5.0000
+     polyppvt640_vs_tsvm                    NaN        precision        5 0.0514 0.0186    NaN    NaN      0.0035      0.0625      5.0000
+     polyppvt640_vs_tsvm                    NaN           recall        5 0.0353 0.0135    NaN    NaN      0.0043      0.0625      5.0000
+     polyppvt640_vs_tsvm                    NaN bg_fp_image_rate        5 0.0100 0.0454    NaN    NaN      0.6483      0.7500      2.0000
+     polyppvt640_vs_tsvm                    NaN         raw_dice        5 0.0408 0.0141    NaN    NaN      0.0029      0.0625      5.0000
+ polyppvt640_vs_baseline                    NaN             dice        5 0.0394 0.0241    NaN    NaN      0.0217      0.0625      5.0000
+ polyppvt640_vs_baseline                    NaN              iou        5 0.0329 0.0252    NaN    NaN      0.0436      0.0625      5.0000
+ polyppvt640_vs_baseline                    NaN        precision        5 0.0418 0.0196    NaN    NaN      0.0088      0.0625      5.0000
+ polyppvt640_vs_baseline                    NaN           recall        5 0.0397 0.0334    NaN    NaN      0.0567      0.0625      5.0000
+ polyppvt640_vs_baseline                    NaN bg_fp_image_rate        5 0.0250 0.0433    NaN    NaN      0.2663      0.5000      2.0000
+ polyppvt640_vs_baseline                    NaN         raw_dice        5 0.0403 0.0239    NaN    NaN      0.0196      0.0625      5.0000
+polyppvt640_vs_pranet640                    NaN             dice        5 0.0091 0.0044    NaN    NaN      0.0095      0.0625      5.0000
+polyppvt640_vs_pranet640                    NaN              iou        5 0.0102 0.0057    NaN    NaN      0.0164      0.0625      5.0000
+polyppvt640_vs_pranet640                    NaN        precision        5 0.0102 0.0106    NaN    NaN      0.0964      0.1250      4.0000
+polyppvt640_vs_pranet640                    NaN           recall        5 0.0013 0.0147    NaN    NaN      0.8558      1.0000      2.0000
+polyppvt640_vs_pranet640                    NaN bg_fp_image_rate        5 0.0050 0.0411    NaN    NaN      0.7990      1.0000      1.0000
+polyppvt640_vs_pranet640                    NaN         raw_dice        5 0.0095 0.0042    NaN    NaN      0.0073      0.0625      5.0000

@@ -1,0 +1,18 @@
+{
+ "seed": 8,
+ "gio_huan_luyen": 2.4275,
+ "gpu": "Tesla T4",
+ "torch": "2.11.0+cu130",
+ "scan_backend": "auto",
+ "epoch_tot_nhat": 92,
+ "mask_map50_95_tot_nhat": 0.73077,
+ "mask_map50_tai_do": 0.93148,
+ "box_map50_95_tai_do": 0.7372,
+ "tham_chieu_pytorch": {
+  "mask_map50_95": 0.73385,
+  "epoch": 93,
+  "gio": 4.62
+ },
+ "delta_map": -0.0031,
+ "ket_luan": "tương đương"
+}

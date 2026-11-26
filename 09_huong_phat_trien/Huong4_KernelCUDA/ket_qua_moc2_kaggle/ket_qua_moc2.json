@@ -1,0 +1,164 @@
+{
+ "moi_truong": {
+  "gpu": "Tesla T4",
+  "torch": "2.11.0+cu130",
+  "cuda": "13.0",
+  "ultralytics": "8.4.127",
+  "ultralytics_tu": "/kaggle/working/ultralytics/__init__.py",
+  "kernel_mamba_ssm": true,
+  "kernel_la_ban_viet_tay": false,
+  "python": "3.13.16",
+  "may": "Linux-6.18.55+-x86_64-with-glibc2.39",
+  "mamba_ssm": "2.3.2.post1"
+ },
+ "nhanh": false,
+ "A": [
+  {
+   "phan": "A1_SS2D_ngau_nhien",
+   "kich_thuoc": "(1, 256, 20, 20)",
+   "sai_khac_dau_ra": 3.5426063504928607e-07,
+   "sai_khac_grad_x": 3.593569033455424e-07,
+   "sai_khac_grad_tham_so": 2.5308945623692125e-06
+  },
+  {
+   "phan": "A1_SS2D_ngau_nhien",
+   "kich_thuoc": "(8, 256, 20, 20)",
+   "sai_khac_dau_ra": 2.0152650392901705e-07,
+   "sai_khac_grad_x": 5.350287324290548e-07,
+   "sai_khac_grad_tham_so": 4.536686446954263e-06
+  },
+  {
+   "phan": "A1_SS2D_ngau_nhien",
+   "kich_thuoc": "(2, 64, 13, 17)",
+   "sai_khac_dau_ra": 1.22194350637983e-07,
+   "sai_khac_grad_x": 2.0119985322253342e-07,
+   "sai_khac_grad_tham_so": 1.898626805996173e-06
+  },
+  {
+   "phan": "A2_SS2D_dac_trung_that",
+   "kich_thuoc": "(8, 256, 20, 20)",
+   "sai_khac_dau_ra": 2.030115808793198e-07
+  },
+  {
+   "phan": "A3_nhanh_TSVMamba_truoc_gamma",
+   "kich_thuoc": "(8, 256, 20, 20)",
+   "sai_khac_dau_ra": 4.156608781613613e-07
+  }
+ ],
+ "B": [
+  {
+   "cau_hinh": "baseline",
+   "mask_map50_95": 0.7312414527279342,
+   "mask_map50": 0.9075987120888556,
+   "mask_P": 0.9234979302722794,
+   "mask_R": 0.8031496062992126,
+   "box_map50_95": 0.7494421177060134,
+   "giay": 13.830488920211792
+  },
+  {
+   "cau_hinh": "tsvm_pytorch",
+   "mask_map50_95": 0.7242185994393601,
+   "mask_map50": 0.9025524113188139,
+   "mask_P": 0.9242628040443921,
+   "mask_R": 0.8661417322834646,
+   "box_map50_95": 0.7144648976082197,
+   "giay": 6.304907560348511
+  },
+  {
+   "cau_hinh": "tsvm_cuda",
+   "mask_map50_95": 0.7242185994393601,
+   "mask_map50": 0.9025524113188139,
+   "mask_P": 0.9242629233376454,
+   "mask_R": 0.8661417322834646,
+   "box_map50_95": 0.7144648976082197,
+   "giay": 3.4778261184692383
+  }
+ ],
+ "C": [
+  {
+   "cau_hinh": "baseline",
+   "trung_vi_ms": 19.243151664733887,
+   "p10_ms": 18.414332580566406,
+   "min_ms": 17.59231948852539,
+   "tb_ms": 19.320566408157347,
+   "ti_le_so_baseline": NaN,
+   "ti_le_cuda_so_pytorch": NaN
+  },
+  {
+   "cau_hinh": "tsvm_cuda",
+   "trung_vi_ms": 19.861775398254395,
+   "p10_ms": 19.195507049560547,
+   "min_ms": 18.66649627685547,
+   "tb_ms": 19.90413035774231,
+   "ti_le_so_baseline": 1.027098966159069,
+   "ti_le_cuda_so_pytorch": 0.5296137375040083
+  },
+  {
+   "cau_hinh": "tsvm_pytorch",
+   "trung_vi_ms": 37.5181770324707,
+   "p10_ms": 36.6616397857666,
+   "min_ms": 36.20844650268555,
+   "tb_ms": 37.57631148147583,
+   "ti_le_so_baseline": 1.9483165594313587,
+   "ti_le_cuda_so_pytorch": NaN
+  }
+ ],
+ "D": [
+  {
+   "batch": 1,
+   "cuda": 1.7510240077972412,
+   "pytorch": 18.90102481842041,
+   "nhanh_hon_lan": 10.794269372809788
+  },
+  {
+   "batch": 8,
+   "cuda": 2.986128091812134,
+   "pytorch": 149.15077209472656,
+   "nhanh_hon_lan": 49.94788150705696
+  }
+ ],
+ "E": [
+  {
+   "cau_hinh": "baseline",
+   "ms_moi_buoc": 498.56988525390625,
+   "bo_nho_dinh_GB": 5.487578868865967
+  },
+  {
+   "cau_hinh": "tsvm_cuda",
+   "ms_moi_buoc": 513.1469421386719,
+   "bo_nho_dinh_GB": 5.623142242431641
+  },
+  {
+   "cau_hinh": "tsvm_pytorch",
+   "ms_moi_buoc": 1073.8784790039062,
+   "bo_nho_dinh_GB": 10.91556167602539
+  }
+ ],
+ "F": [
+  {
+   "cau_hinh": "baseline",
+   "fps": 39.52057380482025,
+   "ms_moi_khung_trung_vi": 25.064492499950575,
+   "tien_xu_ly_ms": 2.463285999965592,
+   "suy_luan_ms": 16.44952700007707,
+   "hau_xu_ly_ms": 0.9435095003027527
+  },
+  {
+   "cau_hinh": "tsvm_cuda",
+   "fps": 38.1839884759746,
+   "ms_moi_khung_trung_vi": 25.905584000156523,
+   "tien_xu_ly_ms": 2.4067340004876314,
+   "suy_luan_ms": 17.274623999583127,
+   "hau_xu_ly_ms": 0.9283069998673454
+  },
+  {
+   "cau_hinh": "tsvm_pytorch",
+   "fps": 22.754618998898827,
+   "ms_moi_khung_trung_vi": 43.98409650048052,
+   "tien_xu_ly_ms": 2.400796999609156,
+   "suy_luan_ms": 35.71176449986524,
+   "hau_xu_ly_ms": 0.9376560001328471
+  }
+ ],
+ "phut": 10.671600377559662
+}

@@ -1,0 +1,15 @@
+﻿thu_muc,tang,train,val,test,tong
+am_tinh,CE,140,30,30,200
+am_tinh,PGR,85,20,20,125
+am_tinh,PGS,128,32,24,184
+polyp,KA,22,4,4,30
+polyp,KV,699,151,150,1000
+polyp,PG_C1,164,44,43,251
+polyp,PG_C2,188,41,41,270
+polyp,PG_C3,330,63,63,456
+polyp,PG_C4,105,21,20,146
+polyp,PG_C5,144,31,31,206
+polyp,PG_C6,60,12,11,83
+polyp,SN,103,22,21,146
+polyp,SW,288,62,62,412
+TỔNG,,2456,533,520,3509

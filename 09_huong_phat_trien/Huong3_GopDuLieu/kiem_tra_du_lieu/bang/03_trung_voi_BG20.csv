@@ -1,0 +1,7 @@
+﻿bo,so_anh,md5_trung_bg20,corr_ge_0_95_voi_bg20,corr_0_90_0_95_voi_bg20,corr_max_voi_bg20
+CVC-ClinicDB,612,0,0,0,0.879
+CVC-ColonDB,380,0,0,0,0.874
+ETIS-Larib,196,0,0,3,0.911
+PolypGen_don,1537,0,0,0,0.899
+PolypDB,3934,0,25,32,0.993
+BKAI-IGH,1200,0,0,2,0.904

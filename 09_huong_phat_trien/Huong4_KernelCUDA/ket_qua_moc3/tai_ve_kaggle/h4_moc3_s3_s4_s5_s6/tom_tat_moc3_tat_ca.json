@@ -1,0 +1,74 @@
+[
+ {
+  "seed": 3,
+  "gio_huan_luyen": 2.4778,
+  "gpu": "Tesla T4",
+  "torch": "2.11.0+cu130",
+  "scan_backend": "auto",
+  "epoch_tot_nhat": 93,
+  "mask_map50_95_tot_nhat": 0.70454,
+  "mask_map50_tai_do": 0.8937,
+  "box_map50_95_tai_do": 0.70655,
+  "tham_chieu_pytorch": {
+   "mask_map50_95": 0.72126,
+   "epoch": 89,
+   "gio": 4.56
+  },
+  "delta_map": -0.0167,
+  "ket_luan": "lệch hơn 1 SD"
+ },
+ {
+  "seed": 4,
+  "gio_huan_luyen": 2.4454,
+  "gpu": "Tesla T4",
+  "torch": "2.11.0+cu130",
+  "scan_backend": "auto",
+  "epoch_tot_nhat": 97,
+  "mask_map50_95_tot_nhat": 0.71235,
+  "mask_map50_tai_do": 0.88923,
+  "box_map50_95_tai_do": 0.7212,
+  "tham_chieu_pytorch": {
+   "mask_map50_95": 0.7197,
+   "epoch": 97,
+   "gio": 4.71
+  },
+  "delta_map": -0.0073,
+  "ket_luan": "tương đương"
+ },
+ {
+  "seed": 5,
+  "gio_huan_luyen": 2.4465,
+  "gpu": "Tesla T4",
+  "torch": "2.11.0+cu130",
+  "scan_backend": "auto",
+  "epoch_tot_nhat": 94,
+  "mask_map50_95_tot_nhat": 0.72875,
+  "mask_map50_tai_do": 0.90426,
+  "box_map50_95_tai_do": 0.72732,
+  "tham_chieu_pytorch": {
+   "mask_map50_95": 0.72845,
+   "epoch": 90,
+   "gio": 4.59
+  },
+  "delta_map": 0.0003,
+  "ket_luan": "tương đương"
+ },
+ {
+  "seed": 6,
+  "gio_huan_luyen": 2.4522,
+  "gpu": "Tesla T4",
+  "torch": "2.11.0+cu130",
+  "scan_backend": "auto",
+  "epoch_tot_nhat": 89,
+  "mask_map50_95_tot_nhat": 0.7237,
+  "mask_map50_tai_do": 0.90452,
+  "box_map50_95_tai_do": 0.72722,
+  "tham_chieu_pytorch": {
+   "mask_map50_95": 0.72537,
+   "epoch": 95,
+   "gio": 4.65
+  },
+  "delta_map": -0.0017,
+  "ket_luan": "tương đương"
+ }
+]

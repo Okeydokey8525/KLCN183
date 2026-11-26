@@ -1,0 +1,7 @@
+path: /kaggle/input/datasets/okeydoke8525/ultralytics-tsvm-fp32/Kvasir_BG20_3tap
+train: images/train
+val: images/val
+test: images/test
+nc: 1
+names:
+  0: polyp

@@ -1,0 +1,38 @@
+[
+ {
+  "seed": 1,
+  "gio_huan_luyen": 2.4859,
+  "gpu": "Tesla T4",
+  "torch": "2.11.0+cu130",
+  "scan_backend": "auto",
+  "epoch_tot_nhat": 90,
+  "mask_map50_95_tot_nhat": 0.74005,
+  "mask_map50_tai_do": 0.90257,
+  "box_map50_95_tai_do": 0.74828,
+  "tham_chieu_pytorch": {
+   "mask_map50_95": 0.72739,
+   "epoch": 98,
+   "gio": 4.64
+  },
+  "delta_map": 0.0127,
+  "ket_luan": "lệch hơn 1 SD"
+ },
+ {
+  "seed": 2,
+  "gio_huan_luyen": 2.4807,
+  "gpu": "Tesla T4",
+  "torch": "2.11.0+cu130",
+  "scan_backend": "auto",
+  "epoch_tot_nhat": 82,
+  "mask_map50_95_tot_nhat": 0.72422,
+  "mask_map50_tai_do": 0.91089,
+  "box_map50_95_tai_do": 0.72407,
+  "tham_chieu_pytorch": {
+   "mask_map50_95": 0.72591,
+   "epoch": 83,
+   "gio": 4.63
+  },
+  "delta_map": -0.0017,
+  "ket_luan": "tương đương"
+ }
+]

@@ -1,0 +1,59 @@
+W1116 20:23:27.095000 20052 Lib\site-packages\torch\utils\flop_counter.py:29] triton not found; flop counting will not work for triton kernels
+C:\LeDucLuong\HK VII\LuanCuNhan\DeepLearning\Baseline_PVT_VMUNet\Polyp-PVT-main\Polyp-PVT-main\lib\pvtv2.py:387: UserWarning: Overwriting pvt_v2_b0 in registry with lib.pvtv2.pvt_v2_b0. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  @register_model
+C:\LeDucLuong\HK VII\LuanCuNhan\DeepLearning\Baseline_PVT_VMUNet\Polyp-PVT-main\Polyp-PVT-main\lib\pvtv2.py:397: UserWarning: Overwriting pvt_v2_b1 in registry with lib.pvtv2.pvt_v2_b1. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  @register_model
+C:\LeDucLuong\HK VII\LuanCuNhan\DeepLearning\Baseline_PVT_VMUNet\Polyp-PVT-main\Polyp-PVT-main\lib\pvtv2.py:405: UserWarning: Overwriting pvt_v2_b2 in registry with lib.pvtv2.pvt_v2_b2. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  @register_model
+C:\LeDucLuong\HK VII\LuanCuNhan\DeepLearning\Baseline_PVT_VMUNet\Polyp-PVT-main\Polyp-PVT-main\lib\pvtv2.py:413: UserWarning: Overwriting pvt_v2_b3 in registry with lib.pvtv2.pvt_v2_b3. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  @register_model
+C:\LeDucLuong\HK VII\LuanCuNhan\DeepLearning\Baseline_PVT_VMUNet\Polyp-PVT-main\Polyp-PVT-main\lib\pvtv2.py:421: UserWarning: Overwriting pvt_v2_b4 in registry with lib.pvtv2.pvt_v2_b4. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  @register_model
+C:\LeDucLuong\HK VII\LuanCuNhan\DeepLearning\Baseline_PVT_VMUNet\Polyp-PVT-main\Polyp-PVT-main\lib\pvtv2.py:430: UserWarning: Overwriting pvt_v2_b5 in registry with lib.pvtv2.pvt_v2_b5. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  @register_model
+             so_epoch  gio_mean  gio_sd  gio_min  gio_max
+model                                                    
+baseline          100      2.32    0.07     2.22     2.40
+tsvm              100      4.61    0.07     4.52     4.71
+pranet640         100      3.97    0.14     3.82     4.20
+unet640           100      5.66    0.78     4.53     6.71
+polyppvt640       100     13.93    0.10    13.84    14.09
+baseline: 11,434,463 tham số, 34.29 GFLOPs, VRAM 142 MB
+tsvm: 12,254,688 tham số, 34.82 GFLOPs, VRAM 199 MB
+pranet640: 24,620,164 tham số, 72.42 GFLOPs, VRAM 297 MB
+unet640: 7,763,041 tham số, 150.89 GFLOPs, VRAM 694 MB
+C:\LeDucLuong\HK VII\LuanCuNhan\DeepLearning\Baseline_PVT_VMUNet\Polyp-PVT-main\Polyp-PVT-main\lib\pvt.py:91: UserWarning: `nn.functional.upsample` is deprecated. Use `nn.functional.interpolate` instead.
+  edge = F.upsample(edge, (x.size()[-2], x.size()[-1]))
+polyppvt640: 25,107,604 tham số, 84.95 GFLOPs, VRAM 512 MB
+vòng 0 baseline: chờ 0s, 51→56°C, xung 855→2835 MHz, trung vị 39.38 ms
+vòng 0 tsvm: chờ 5s, 52→59°C, xung 435→2835 MHz, trung vị 48.61 ms
+vòng 0 pranet640: chờ 5s, 53→58°C, xung 405→2842 MHz, trung vị 39.80 ms
+vòng 0 unet640: chờ 5s, 54→69°C, xung 225→2820 MHz, trung vị 24.15 ms
+vòng 0 polyppvt640: chờ 15s, 54→69°C, xung 427→2805 MHz, trung vị 42.24 ms
+vòng 1 polyppvt640: chờ 26s, 54→68°C, xung 435→2805 MHz, trung vị 40.34 ms
+vòng 1 unet640: chờ 31s, 54→69°C, xung 420→2827 MHz, trung vị 23.97 ms
+vòng 1 pranet640: chờ 20s, 54→60°C, xung 855→2820 MHz, trung vị 40.02 ms
+vòng 1 tsvm: chờ 15s, 54→61°C, xung 1020→2805 MHz, trung vị 54.06 ms
+vòng 1 baseline: chờ 10s, 54→60°C, xung 255→2835 MHz, trung vị 30.30 ms
+vòng 2 baseline: chờ 10s, 54→59°C, xung 292→2835 MHz, trung vị 31.28 ms
+vòng 2 tsvm: chờ 5s, 54→62°C, xung 225→2835 MHz, trung vị 39.32 ms
+vòng 2 pranet640: chờ 10s, 53→60°C, xung 442→2842 MHz, trung vị 23.63 ms
+vòng 2 unet640: chờ 5s, 53→67°C, xung 765→2827 MHz, trung vị 24.01 ms
+vòng 2 polyppvt640: chờ 5s, 54→69°C, xung 345→2805 MHz, trung vị 36.78 ms
+vòng 3 polyppvt640: chờ 10s, 54→69°C, xung 1785→2805 MHz, trung vị 35.05 ms
+vòng 3 unet640: chờ 10s, 54→69°C, xung 247→2827 MHz, trung vị 24.07 ms
+vòng 3 pranet640: chờ 10s, 54→65°C, xung 592→2827 MHz, trung vị 15.89 ms
+vòng 3 tsvm: chờ 10s, 54→64°C, xung 442→2820 MHz, trung vị 22.03 ms
+vòng 3 baseline: chờ 10s, 53→61°C, xung 405→2827 MHz, trung vị 12.93 ms
+vòng 4 baseline: chờ 5s, 53→61°C, xung 405→2827 MHz, trung vị 13.19 ms
+vòng 4 tsvm: chờ 5s, 53→65°C, xung 382→2827 MHz, trung vị 22.01 ms
+vòng 4 pranet640: chờ 5s, 54→65°C, xung 592→2842 MHz, trung vị 15.74 ms
+vòng 4 unet640: chờ 5s, 54→68°C, xung 427→2827 MHz, trung vị 24.23 ms
+vòng 4 polyppvt640: chờ 5s, 54→70°C, xung 397→2805 MHz, trung vị 34.98 ms
+               params  gflops_flopcounter  vram_suy_luan_mb  ckpt_mib  gpu_ms_median  gpu_ms_min  gpu_ms_p10  gpu_ms_mean  gpu_ms_sd  ti_le_vs_yolo_median  ti_le_vs_yolo_vong_min  ti_le_vs_yolo_vong_max
+model                                                                                                                                                                                                     
+baseline     11434463              34.292           141.644    22.269         28.020      10.891      12.061       26.094     11.613                 1.000                   1.000                   1.000
+tsvm         12254688              34.822           199.231    47.368         40.054      19.571      21.055       39.101     15.654                 1.429                   1.235                   1.784
+pranet640    24620164              72.422           297.411    94.357         23.841      14.732      15.538       27.991     15.404                 0.851                   0.755                   1.321
+unet640       7763041             150.890           694.262    29.675         24.117      23.742      23.850       24.327      0.868                 0.861                   0.613                   1.862
+polyppvt640  25107604              84.950           511.804    95.932         37.011      34.043      34.643       39.052      6.615                 1.321                   1.073                   2.712
